@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #faf9f9;
+        padding: 1rem 2rem;
+      }
+
+      .card {
+        background-color: #fffeff;
+        margin-bottom: 20px;
+        padding: 8px 16px;
+      }
+
+      .logo {
+        width: 60px;
+        height: auto;
+        display: block;
+        margin-right: auto;
+        
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #524f4f;
+        margin-right: 20px;
+      }
+      nav  {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+      }
+      header {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: space-between;
+      }
+
+      #hero{
+        display: flex;
+       
+      }
+
+      #hero div {
+        flex: 1;
+      }
+
+      #hero div:nth-child (1) {
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        row-gap:20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="card">
+        <header class="card">
+          
+          <nav>
+            <img
+            class="logo"
+            src="/img/logo.png"
+            alt="log"
+            width="100"
+            height="100"
+          />
+            <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href=""><button>Menu</button></a>
+            </div>
+          </nav>
+
+      <div id="hero">
+        <div>
+        <h1>Azeem Ahamed</h1>
+        <h2>Full Stack Software Development</h2>
+        <button>Button</button>
+        </div>
+        <div>
+          <img src="/img/web.jpg" width="300px" height="300px" alt="soft" />
+        </div>
+      </div>
+
+        </header>
+      </div>
+
+      
+    </div>
+  </body>
+</html>
