@@ -3,74 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #faf9f9;
-        padding: 1rem 2rem;
-      }
-
-      .card {
-        background-color: #fffeff;
-        margin-bottom: 20px;
-        padding: 8px 16px;
-      }
-
-      .logo {
-        width: 60px;
-        height: auto;
-        display: block;
-        margin-right: auto;
-        
-      }
-
-      nav a {
-        text-decoration: none;
-        color: #524f4f;
-        margin-right: 20px;
-      }
-      nav  {
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-      }
-      header {
-        display: flex;
-        flex-direction: column;
-        row-gap: 30px;
-        justify-content: space-between;
-      }
-
-      #hero{
-        display: flex;
-       
-      }
-
-      #hero div {
-        flex: 1;
-      }
-
-      #hero div:nth-child(1) {
-        display: flex;
-        flex-direction:column;
-        justify-content:center;
-        row-gap:20px;
-      }
-
-      #hero img {
-        width: 100%;
-        height: auto;
-      }
-    </style>
+    <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
     <div>
       <div class="card">
@@ -89,18 +24,21 @@
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Contact</a>
-            <a href=""><button>Menu</button></a>
+            <button id="toggle-menu">Menu</button>
             </div>
           </nav>
 
       <div id="hero">
-        <div>
+        <div class="gapy2">
         <h1>Azeem Ahamed</h1>
         <h2>Full Stack Software Development</h2>
-        <button>Button</button>
+        <div class="flex justify-start item-start gap">
+          <a href="#" class="btn self-start">Get a quote</a>
+          <a href="#" class="btn self-start">See Project</a>
+        </div>
         </div>
         <div>
-          <img src="/img/web.jpg" alt="soft" />
+          <img src="img/web.jpg" alt="soft" />
         </div>
       </div>
 
@@ -109,5 +47,6 @@
 
       
     </div>
+    
   </body>
 </html>

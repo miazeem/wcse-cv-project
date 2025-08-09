@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: poppins, sans-serif;
+        background-color: #faf9f9;
+        padding: 1rem 2rem;
+      }
+
+      .card {
+        background-color: #fffeff;
+        margin-bottom: 20px;
+        padding: 8px 16px;
+      }
+
+      .logo {
+        width: 60px;
+        height: auto;
+        display: block;
+        margin-right: auto;
+        
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #524f4f;
+        margin-right: 20px;
+      }
+      nav  {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+      }
+      header {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: space-between;
+      }
+
+      #hero{
+        display: flex;
+        align-items: center;
+    }
+
+      #hero div {
+        flex: 1;
+      }
+
+      #hero div:nth-child(1) {
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: start;
+        
+      }
+
+      #hero img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .btn {
+        display: inline-block;
+        background-color: #45929B;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        border: 1px solid transparent;
+      }
+
+      .btn:hover {
+        background-color: #3a7b8c;
+        border: #525457 1px solid;
+      }
+
+      #toggle-menu{
+        background-color: transparent;
+        padding: 5px;
+        border-radius: 5px;
+
+      }
+
+      #hero h2 {
+     
+        color: #525457;
+      }
+
+      .flex {
+        display: flex;
+       
+      }
+
+      .flex-column {
+        flex-direction: column;
+      }
+
+      .flex-row {
+        flex-direction: row;
+      }
+
+      .flex-wrap {
+        flex-wrap: wrap;
+      } 
+
+      .justify-center {
+        justify-content: center;
+      }
+
+      .item-center {
+        align-items: center;
+      }
+
+      .justify-center {
+        justify-content: flex-start;
+      }
+
+
+      .item-start {
+        align-items: flex-start;
+      }
+
+      .gap {
+        gap: 10px;
+      }
+
+      .self-start {
+        align-self: flex-start;
+      }
+
+      .gapy2{
+        gap: 5px;
+      }
