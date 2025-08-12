@@ -4,49 +4,161 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div>
+    <div >
       <div class="card">
         <header class="card">
-          
           <nav>
             <img
-            class="logo"
-            src="/img/logo.png"
-            alt="log"
-            width="100"
-            height="100"
-          />
+              class="logo"
+              src="/img/logo.png"
+              alt="log"
+              width="100"
+              height="100"
+            />
             <div>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-            <button id="toggle-menu">Menu</button>
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Contact</a>
+              <button id="toggle-menu">Menu</button>
             </div>
           </nav>
 
-      <div id="hero">
-        <div class="gapy2">
-        <h1>Azeem Ahamed</h1>
-        <h2>Full Stack Software Development</h2>
-        <div class="flex justify-start item-start gap">
-          <a href="#" class="btn self-start">Get a quote</a>
-          <a href="#" class="btn self-start">See Project</a>
-        </div>
-        </div>
-        <div>
-          <img src="img/web.jpg" alt="soft" />
-        </div>
-      </div>
-
+          <div id="hero">
+            <div class="gapy2">
+              <h1>Azeem Ahamed</h1>
+              <h2>Full Stack Software Development</h2>
+              <div class="flex justify-start item-start gap">
+                <a href="#" class="btn self-start">Get a quote</a>
+                <a href="#" class="btn self-start">See Project</a>
+              </div>
+            </div>
+            <div>
+              <img src="img/web.jpg" alt="soft" />
+            </div>
+          </div>
         </header>
       </div>
 
-      
+      <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form id="bootcampForm">
+          <div class="form-grid">
+            <div>
+              <label for="name">Full Name</label>
+
+              <input
+                class="in-put"
+                type="text"
+                id="name"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="dob">Date of Birth</label>
+
+              <input class="in-put" type="date" id="dob" required />
+            </div>
+
+            <div>
+              <label for="gender">Genter</label>
+              <select class="in-put" id="gender" required>
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="">Email</label>
+              <input
+                class="in-put"
+                type="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="phone">Phone Number</label>
+              <input
+                class="in-put"
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="address">LinkedIn</label>
+              <input
+                class="in-put"
+                type="url"
+                id="linkedin"
+                placeholder="LinkedIn / GitHub Profile (optional)"
+              />
+            </div>
+            <div>
+              <label for="">Qualification</label>
+              <select class="in-put" id="education" required>
+                <option value="">Education Level</option>
+                <option>High School</option>
+                <option>Diploma</option>
+                <option>Bachelor's Degree</option>
+                <option>Master's Degree</option>
+                <option>PhD</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="">Experience</label>
+              <select class="in-put" id="experience" required>
+                <option value="">Years of Experience in Tech</option>
+                <option>0 - 1 Year</option>
+                <option>2 - 3 Years</option>
+                <option>4 - 5 Years</option>
+                <option>6+ Years</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="">Prepferred Language</label>
+              <select class="in-put" id="language" required>
+                <option value="">Preferred Programming Language</option>
+                <option>JavaScript</option>
+                <option>Python</option>
+                <option>Java</option>
+                <option>PHP</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="">Why do you want to join the Bootcamp?</label>
+              <textarea
+                class="in-put"
+                id="reason"
+                placeholder="Why do you want to join the Bootcamp?"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <button type="submit">Send to WhatsApp</button>
+        </form>
+      </div>
     </div>
-    
+
+    <script src="script.js"></script>
   </body>
 </html>
